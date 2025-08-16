@@ -1,0 +1,56 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  height:100vh;
+}
+
+.container{
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  gap:5px;
+}
+
+.logo,
+.header,
+.body,
+.footer {
+  padding:10px;
+  background-color:grey;
+  text-align:center;
+}
+
+.section {
+  display:flex;
+  gap:10px;
+  flex:1;
+}
+
+.sidebar{
+  width:25%;
+}
+
+.content{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.header{
+  height:30%;
+}
+
+.body{
+  flex:1;
+}
+
+@media (max-width: 600px){
+  .section{
+    flex-direction:column;
+  }
+}
