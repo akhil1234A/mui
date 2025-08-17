@@ -8,7 +8,7 @@ import Link from '@mui/material/Link';
 
 const Header = ({siteName}) => {
   return (
-    <AppBar position="static" color='default' elevation={0} sx={{borderBottom:1, borderColor: "divider"}}>
+    <AppBar position="static" color='#fff' elevation={0} sx={{borderBottom:1, borderColor: "divider"}}>
       <Toolbar sx={{justifyContent:"space-between"}}>
         <Typography variant='h6'>{siteName}</Typography>
         <Box display="flex" gap={3} alignItems="center">

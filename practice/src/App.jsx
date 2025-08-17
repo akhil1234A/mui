@@ -1,21 +1,21 @@
 import React from 'react'
-import Box from '@mui/material/Box';
-import Container from '@mui/material/Container';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import About from './pages/About'
+import Intro from './pages/Intro'
+import AboutPractice from'./pages/AboutPractice'
+
 
 const App = () => {
-
-  const siteName = "Site Name";
-
   return (
-    <Box minHeight="100vh" bgcolor="grey.50">
-      <Header siteName={siteName}/>
-      <Container maxWidth="lg" sx={{py:8}}>
-
-      </Container>
-      <Footer siteName={siteName}/>
-    </Box>
+    <div>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Intro/>} />
+          <Route path="/about" element={<About/>}/>
+          <Route path="/test" element={<AboutPractice/>}/>
+        </Routes>
+      </Router>
+    </div>
   )
 }
 
